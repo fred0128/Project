@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tree {
+    width: 100%;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+}
+
+ul ul li {
+    text-wrap: nowrap;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+li {
+    float: left;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px #00000040;
+    transition: 0.3s all;
+}
+
+li:hover {
+    box-shadow: 8px 8px 8px #00000020;
+}
+
+li ul li {
+    width: fit-content;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover ul li {
+    background-color: #cce;
+    border: 1px solid #cce;
+    transition: .3s all;
+}
+
+li ul li:hover {
+    scale: 1.05;
+}
